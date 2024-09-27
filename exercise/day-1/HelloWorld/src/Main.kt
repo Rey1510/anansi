@@ -1,8 +1,8 @@
 fun main() {
     var grade: Int
-    grade = 101
+    grade = -1
     println("Your grade is ")
-    if (grade > 100) {
+    if (grade > 100 && grade < 0) {
         println("Masukkin yang bener WOI!")
     }else if (grade in 90..100) {
         println("A")
