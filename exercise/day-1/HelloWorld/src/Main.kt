@@ -1,19 +1,12 @@
 fun main() {
-    val secretNumber = 7
-    val guesses = arrayOf(5, 3, 7, 0)
-    var index = 0
+    var tank : Int = 0
 
-    while (index < guesses.size) {
-        val guess = guesses[index]
-        index++
-        if (guess == 0) {
-            println("Game berhenti, guess 0.")
+    while(tank <= 50) {
+        println("Isi tangki sekarang $tank Liter")
+        tank += 5
+        if(tank > 40){
+            print("Isi di tangki sudah melebihi 40L")
             break
-        } else if (guess == secretNumber) {
-            println("Selamat! Angka benar: $secretNumber")
-            break
-        } else {
-            println("Guess $guess salah. Coba lagi!")
         }
     }
 }
