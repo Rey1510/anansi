@@ -1,0 +1,58 @@
+Multiple Choice
+1. C
+2. C 
+3. B 
+4. B 
+5. D 
+
+True/ False
+1. False
+2. True 
+3. True
+4. True
+5. False
+
+Short Answer
+1. Kotlin memiliki sintaksis yang intuitif dan ringkas selain menjadi bahasa yang sederhana, portabel, dan canggih.
+
+2. var bersifat “dapat dirubah” nilainya, sedangkan val bersifat “konstan”
+
+3. Null safety di Kotlin merupakan fitur yang mengatasi masalah umum dalam pemrograman yang disebut NullPointerException (NPE) yang dapat menyebabkan crash aplikasi atau perilaku yang tidak terduga.
+
+4. When merupakan salah satu kontrol percabangan di dalam Kotlin. When akan menjalankan kode yang berbeda berdasarkan nilai dari argument variabel. Di Kotlin, saat menangani beberapa cabang, Anda dapat menggunakan pernyataan when sebagai ganti pernyataan if/else karena akan meningkatkan keterbacaan, yang mengacu pada kemudahan bagi pembaca manusia, biasanya developer, untuk membaca kode.
+
+5. Dependency injection (DI) adalah teknik dalam object-oriented programming (OOP) untuk meningkatkan modularitas dan fleksibilitas kode dengan cara mengurangi ketergantungan langsung antar komponen.
+
+6. Di Kotlin, fungsi didefinisikan dengan keyword fun, dengan tipe pengembalian ditulis setelah daftar parameter. Kotlin juga mendukung fungsi di level teratas (di luar kelas).
+
+7. Fungsi higher-order adalah fungsi yang menerima atau mengembalikan fungsi lain sebagai parameter. Lambda adalah fungsi anonim yang dapat diteruskan sebagai argumen, membuat Kotlin lebih ringkas dan fungsional.
+
+8. MVVM adalah singkatan dari Model-View-ViewModel. Komponen utamanya adalah:
+
+Model: Mengelola data dan logika bisnis.
+View: Mewakili antarmuka pengguna dan interaksi pengguna.
+ViewModel: Mengelola logika presentasi dan berkomunikasi antara Model dan View.
+
+9. ViewModel menyediakan data untuk View, biasanya melalui data yang dapat diobservasi seperti LiveData. ViewModel mengambil data dari Model, memastikan pemisahan logika presentasi dari logika bisnis.
+
+10. LiveData adalah pengamat data yang lifecycle-aware, digunakan untuk memberi tahu View ketika data di ViewModel berubah, sehingga UI tetap terupdate tanpa kebocoran memori.
+
+11. Kotlin mengurangi kode boilerplate dengan fitur seperti inference tipe, fungsi ekstensi, data class, dan lambda, memungkinkan pengembang menulis kode lebih sedikit dengan lebih ekspresif.
+
+12. Kotlin menggunakan loop berbasis rentang (range-based loop) yang memungkinkan iterasi melalui rentang, array, atau koleksi dengan sintaks lebih ringkas seperti for (i in 1..10).
+
+13. Kotlin secara otomatis menginferensikan tipe variabel dari inisialisasinya, memungkinkan pengembang untuk tidak perlu menuliskan tipe secara eksplisit jika sudah jelas dari konteksnya.
+
+14. Enkapsulasi adalah prinsip OOP di mana keadaan internal objek disembunyikan dan diakses melalui metode publik. Di Kotlin, ini diterapkan dengan modifier akses (private, protected, internal, public) dan properti getter/setter.
+
+15. Data binding memungkinkan koneksi langsung antara View dan ViewModel, sehingga UI diperbarui secara otomatis ketika data berubah, mengurangi kebutuhan untuk memperbarui UI secara manual.
+
+16. Repository mengabstraksi akses data, memusatkan operasi data dan menyediakan API yang bersih untuk ViewModel, terlepas dari sumber data (database, layanan web, dll.).
+
+17. Kotlin menawarkan null safety, interoperabilitas yang lebih baik dengan Java, fungsi ekstensi, sintaks yang lebih ringkas, dan coroutines untuk pemrograman asinkron, meningkatkan pengalaman pengembangan aplikasi Android.
+
+18. Di Koin, mendefinisikan modul di mana Anda menyatakan cara menginisialisasi objek (misalnya, single { MyService() }) dan kemudian menyuntikkan objek tersebut ke dalam kelas menggunakan by inject() atau constructor injection.
+
+19. Constructor injection memastikan bahwa kelas menerima semua dependensinya di awal, membuatnya lebih mudah diuji dan memastikan immutabilitas, karena dependensi tidak dapat diubah setelah inisialisasi.
+
+20. Kotlin mencegah null pointer exception dengan null safety yang memaksa penanganan tipe nullable secara eksplisit saat kompilasi (? untuk variabel nullable, !! untuk asersi non-null).
