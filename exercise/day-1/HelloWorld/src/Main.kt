@@ -1,15 +1,14 @@
 fun main() {
-    var price: Double = 100.0
+    var usage = 201.0
+    var total: Double = 0.0
 
-    if (price < 0){
-        println("Masukkin yang bener bang!")
-    } else {
-        val total = when {
-            price in 50.0..100.0 -> price - (price * 0.1)
-            price > 100 && price <= 200 -> price - (price * 0.2)
-            price > 200.0 -> price - (price * 0.3)
-            else -> price
-        }
-        println("Total: $total")
+    if (usage <= 100 && usage >= 0){
+        total = usage
+    } else if (usage > 100 && usage <=200){
+        total = 100 + ((usage-100)*1.5)
+    } else if(usage > 200) {
+        total = 250 + ((usage-200)*2)
     }
+
+    println("Total $total")
 }
