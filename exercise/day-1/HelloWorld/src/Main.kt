@@ -1,17 +1,15 @@
 fun main() {
-    var salary : Int;
-    var timeWorked : Int;
+    var price: Double = 100.0
 
-    salary = 100000
-    timeWorked = 3
-    if (timeWorked < 0){
+    if (price < 0){
         println("Masukkin yang bener bang!")
     } else {
         val total = when {
-            timeWorked in 2..5 -> salary * 0.1
-            timeWorked > 5 -> salary * 0.2
-            else -> 0
+            price in 50.0..100.0 -> price - (price * 0.1)
+            price > 100 && price <= 200 -> price - (price * 0.2)
+            price > 200.0 -> price - (price * 0.3)
+            else -> price
         }
-        println("Bonus: $total")
+        println("Total: $total")
     }
 }
