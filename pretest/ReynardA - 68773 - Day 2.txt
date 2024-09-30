@@ -1,0 +1,115 @@
+Multiple Choice
+1. a
+2. d 
+3. c 
+4. b 
+5. c 
+
+True or false
+
+6. var dipakai untuk variable yang mutable atau valuenya bisa berganti, val digunakan untuk declare variable yang immutable sehingga tidak dapat diubah-ubah
+
+7. Untuk create list di kotlin dapat menggunakan listOf() untuk list yang tidak dapat diubah baik dari menambah index atau mengubah value atau mutablelistOf() untuk list yang dapat diubah isinya.
+
+8.  if (x < 0) {
+        println("Angka negatif")    
+    } else {
+        println("Angka positif")
+    }
+
+9. Kotlin dapat menghandle null dengan menggunakan '?' contohnya val name: String? = null
+
+10. lambda function adalah anonymous function yang tidak perlu dideclare terlebih dahulu dan akan langsung di passing sebagai expression.
+
+11. Untuk define class dapat mengetik class ...(parameter)
+
+12. for (i in *range*(contoh : 1 .. 10)) {
+        println("i")
+    }
+
+13. function when digunakan seperti switch case tetapi bisa lebih fleksibel karena bisa memberi beberapa statement.
+
+14. Untuk mengecek angka genap atau ganjil dapat digunakan modulus 2 jika habis dibagi 2 maka angka genap jika sisa 1 maka angka ganjil.
+
+if (number % 2 == 0) {
+    println("$number ganjil")
+}
+
+15. Contoh declare array : val myArray = arrayOf(1, 2, 3). Di array harus satu tipe data.
+
+Yes / No
+16. No
+17. Yes
+18. Yes
+19. Yes
+20. Yes
+
+Correct The code
+
+21.
+var x = "Hello"
+x = "World"
+
+Notes : Jika menggunakan val tidak dapat mengganti value
+
+22.
+fun sum(a: Int, b: Int): Int {
+    return a + b
+}
+sum(5, 10)
+
+23.
+val myList = mutableListOf(1, 2, 3)
+myList.add(4)
+
+24.
+val name: String? = null
+
+25.
+if (x > 5) {
+    println("x is greater than 5")
+}
+
+26.
+when (x) {
+    1 -> println("One")
+    2 -> println("Two")
+    else -> println("Other")
+}
+
+27.
+fun greet() {
+    println("Hello, $name")
+}
+
+28.
+val myVar = 10
+val result = myVar + 5
+
+29.
+val numbers = arrayOf(1, 2, 3)
+println(numbers[2]) //error karena tadi index mulai dari 0
+
+30.
+ class Person(val name: String, val age: Int) {
+    fun greet() {
+        print("Hello, my name is $name and I'm $age")
+    }
+}
+
+Story
+
+fun reserveSeat(name: String, seatNumber: Int, availableSeats: Array<Int>) {
+    if (availableSeats.contains(seatNumber)) {
+        availableSeats[seatNumber -1] = 0
+        println("$name reserved seat $seatNumber.")
+    } else {
+        println("Seat $seatNumber is already reserved.")
+    }
+}
+
+fun main() {
+    val availableSeats = arrayOf(1, 2, 3, 4, 5)
+    reserveSeat("John", 2, availableSeats)
+    reserveSeat("Sarah", 2, availableSeats)
+}
