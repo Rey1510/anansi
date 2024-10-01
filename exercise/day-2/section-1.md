@@ -154,7 +154,7 @@
   - `name` (String, non-empty)
   - `membershipType` (String, values: "Standard", "Premium")
 
-#### Features:
+#### Features:+
 
 1. **Add Book**:
 
