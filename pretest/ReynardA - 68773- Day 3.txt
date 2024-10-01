@@ -1,0 +1,53 @@
+Multiple Question
+1. b
+2. b
+3. c 
+4. c 
+5. c 
+
+Short Answer
+
+6. listOf isinya tidak bisa diganti-ganti sedangkan mutableListOf bisa
+
+7. onStop() dipanggil ketika aktivitas tidak lagi terlihat, tetapi masih bisa dimulai ulang. onDestroy() dipanggil ketika aktivitas akan dihapus secara permanen dari memori, baik karena pengguna menutupnya atau sistem mengambil kembali sumber daya.
+
+8. Coroutines memberikan alternatif yang ringan untuk thread, mengurangi overhead dan menyederhanakan kode untuk pemrograman asinkron, terutama untuk tugas jangka panjang tanpa memblokir thread utama.
+
+9. Gunakan komponen yang sadar akan siklus hidup seperti ViewModel dan LiveData, hindari menyimpan referensi ke Activity atau Context, dan gunakan referensi lemah (weak references) bila diperlukan. Selain itu, pertimbangkan untuk menyimpan status di metode onSaveInstanceState().
+
+10. View adalah elemen UI tunggal (misalnya tombol, bidang teks), sedangkan ViewGroup adalah wadah yang dapat memuat beberapa objek View, memberikan struktur tata letak.
+
+11. RecyclerView lebih fleksibel, efisien, dan dapat disesuaikan daripada ListView, mendukung daur ulang tampilan, layout manager, dan animasi untuk kumpulan data yang besar.
+
+12. onResume() dipanggil ketika aktivitas menjadi sepenuhnya interaktif dengan pengguna setelah onStart().
+
+13. launch memulai coroutine baru secara non-blocking, menjalankannya secara bersamaan dengan kode lainnya.
+
+14. LiveData adalah kelas penyimpan data yang dapat diamati di Android yang menghormati siklus hidup komponen seperti Activity atau Fragment, memastikan data diperbarui hanya saat komponen aktif.
+
+15. ViewModel dirancang untuk menyimpan dan mengelola data yang terkait dengan UI dengan cara yang sadar akan siklus hidup, memungkinkan data bertahan dari perubahan konfigurasi seperti rotasi layar.
+
+Yes/No
+
+16. No
+17. Yes
+18. No
+19. Yes
+20. Yes
+
+Correct the Code
+
+21.
+val myList = mutableListOf(1, 2, 3)
+myList.add(4)
+
+22.
+suspend override fun onCreate() {
+    super.onCreate()
+    setContentView(R.layout.activity_main)
+}
+23. Gak tauu 🫨
+24. Gak tauu 🫨
+25. Gak tauu 🫨
+
+26. Gak tauu 🫨
