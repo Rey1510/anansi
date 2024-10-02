@@ -1,0 +1,60 @@
+Multiple Question
+1. b 
+2. b 
+3. b 
+4. c 
+5. b 
+
+Short Answer
+6. listOf cuma bisa read only jadi gabisa diubah" isinya, sedangkan mutableListOf bisa
+
+7. untuk melakukan suspend bisa menggunakan keyword 'suspend' sebelum function dan menggunakan delay()
+
+8. onPause dilakukan untuk mengepause task yang sedang berjalan, seperti mengepause animasi atau melepas resource sementara
+
+9. RecyclerView lebih disarankan karena memberi fleksibilitas dalam layout management dan menggunakan kembali view(view recycling)
+
+10. Room adalah lapisan abstraksi di atas SQLite yang menyederhanakan manajemen database dengan menyediakan pemeriksaan waktu kompilasi untuk query SQL dan penanganan data yang lebih mudah melalui DAO (Data Access Objects) dan kelas entitas.
+
+11. Retrofit mengubah request dari API HTTP menjadi interface Kotlin dan mengelola panggilan API secara async dengan coroutines
+
+12. onCreate menginisialisasi sebuah aktivitas dan menyiapkan interface UI dengan inflate layout
+
+13. LiveData adalah penampung data yang dapat diamati dan sadar lifecycle di Android yang memungkinkan komponen UI mengamati perubahan data secara otomatis sesuai dengan siklus hidup aktivitas atau fragmen.
+
+14. Kita dapat menangani rotasi layar di Android tanpa kehilangan data dengan menggunakan ViewModel, yang bertahan selama perubahan konfigurasi, atau dengan menyimpan status di onSaveInstanceState() dan memulihkannya di onRestoreInstanceState().
+
+15. Coroutine bersifat ringan dan non-blocking, membuatnya lebih efisien dibandingkan dengan thread tradisional. Coroutine memungkinkan penanganan tugas asinkron yang lebih baik, menyederhanakan keterbacaan kode, dan mengurangi penggunaan memori karena tidak memerlukan banyak thread untuk setiap tugas.
+
+Yes/ No
+16. No 
+17. Yes 
+18. Yes
+19. Yes
+20. Yes
+
+Correct the Code
+21. val myList = mutableListOf(1, 2, 3)
+    myList.add(4)
+
+22. Gak tau😯
+
+23. val map = mutableMapOf(1 to "One", 2 to "Two")
+    map[3] = "Three"
+
+24. Intent intent = new Intent(this, SecondActivit.class)
+    startActivity(intent)
+
+25. Toast.makeText(this, "Button clicked", Toast.LENGTH_SHORT).show()
+
+26. val result = add(5, 10)
+
+27. Gatau codenya tapi mungkin karena masuknya Integer tapi waktu di get Data typenya String
+
+28. Gak tau😯
+
+29. Gak tau😯
+
+30. Gak tau😯
+
+31. Gak tau😯
