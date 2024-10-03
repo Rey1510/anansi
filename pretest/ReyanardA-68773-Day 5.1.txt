@@ -1,0 +1,51 @@
+Optional Question
+1. D 
+2. B 
+3. A 
+4. C 
+5. B 
+
+True/ False Question
+1. False
+2. True
+3. False
+4. True
+5. False
+
+Short Answer Questions
+1. onPause() dipanggil ketika activity tidak fokus tapi belum berhenti sepenuhnya sedangkan onStop() dipanggil saat benar-benar tidak visible
+
+2. 
+val intent = Intent(this, AnotherActivity::class.java)
+intent.putExtra("key", "value")
+startActivity(intent)
+
+3. onSaveInstanceState() memungkinkan untuk menyimpan status UI, seperti input formulir atau data sementara, sehingga saat aktivitas dibuat ulang setelah rotasi layar, UI dapat dikembalikan ke status sebelumnya.
+
+4. 
+Ketika tombol kembali ditekan, siklus hidup aktivitas akan bertransisi sebagai berikut:
+
+onPause(): Aktivitas tidak lagi berada di latar depan.
+onStop(): Aktivitas tidak lagi terlihat.
+onDestroy(): Aktivitas dihancurkan dan dihapus dari memori.
+
+5. gak tauu🫨
+
+Code Fix Questions
+1. 
+val intent = Intent(this, MainActivity::class.java)
+startActivity(intent)
+
+Penjelasan: startActivity() membutuhkan objek Intent, bukan referensi kelas. Anda harus membuat Intent terlebih dahulu dan mengopernya ke startActivity().
+
+2.
+override fun onCreate(savedInstanceState: Bundle) {
+    super.onCreate()
+    setContentView(binding.root)
+}
+
+3. 
+override fun onDestroy() {
+    super.onDestroy()
+    // Your code here
+}
