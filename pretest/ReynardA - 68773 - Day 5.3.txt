@@ -49,4 +49,5 @@ editor.commit()
 
 Jika menggunakan .clear() maka seluruh entry akan dihapus kalau commit() hanya key spesifik saja
 
-Projectt!!!!🙂
+Projectt!!!!🙂 (Videoo)
+https://drive.google.com/file/d/1wr60G2PYMYt_-Em9dRu_dU5HSe82ze88/view?usp=sharing

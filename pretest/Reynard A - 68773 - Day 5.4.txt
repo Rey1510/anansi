@@ -1,0 +1,74 @@
+Optional Questions
+1. b
+2. b
+3. b 
+4. c
+5. a
+
+True/False Questions
+1. True
+2. False
+3. True
+4. False
+5. False
+
+Short Answer Questions
+1. GsonConverterFactory digunakan untuk mengonversi respons JSON dari server menjadi objek Java/Kotlin dengan mengintegrasikan pustaka Gson dengan Retrofit.
+
+2. Untuk melakukan panggilan asinkron, Kita dapat memanggil metode enqueue() pada objek yang dicall dan menyediakan callback untuk menangani keberhasilan atau kegagalan.
+
+3.Panggilan sinkron memblokir utas utama dan menunggu respons server, yang dapat menyebabkan kelambatan atau pembekuan aplikasi. Panggilan asinkron berjalan di latar belakang dan mengembalikan hasilnya melalui panggilan balik, sehingga aplikasi tetap responsif.
+
+4. Dengan menggunakan @Query seperti berikut
+@GET("users")
+fun getUsers(@Query("page") page: Int): Call<List<User>>
+
+5. Dalam Retrofit, kesalahan dapat ditangani dalam pemanggilan kembali onFailure() ketika menggunakan enqueue() untuk panggilan asinkron. Anda juga dapat memeriksa objek Response di onResponse() untuk memeriksa kesalahan (seperti kode status 4xx atau 5xx). Selain itu, Anda dapat menggunakan pencegat dari pustaka seperti OkHttp untuk menangani kesalahan jaringan secara lebih komprehensif.
+
+Code Fix Questions
+1.
+@GET("users")
+fun getUsers(): Call<List<User>>
+val call = apiService.getUsers()
+call.enqueue(object : Callback<List<User>> {
+    override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
+
+    }
+
+    override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+
+    }
+})
+
+2.
+@POST("login")
+fun loginUser(@Body credentials: Map<String, String>): Call<LoginResponse>
+
+val credentials = mapOf("username" to "yourUsername", "password" to "yourPassword")
+val call = apiService.loginUser(credentials)
+call.enqueue(object : Callback<LoginResponse> {
+    override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
+
+    }
+
+    override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
+
+    }
+})
+
+3.
+@GET("user/{id}")
+fun getUserById(@Path("id") userId: Int): Call<User>
+
+val call = apiService.getUserById(123)
+call.enqueue(object : Callback<User> {
+    override fun onResponse(call: Call<User>, response: Response<User>) {
+        // Handle response
+    }
+
+    override fun onFailure(call: Call<User>, t: Throwable) {
+        // Handle failure
+    }
+})
+
+Project!!!🥲
