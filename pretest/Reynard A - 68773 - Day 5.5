@@ -1,0 +1,39 @@
+Optional Questions
+1. c
+2. c
+3. a
+4. b
+5. b
+
+True/False Questions
+1. False
+2. False
+3. True
+4. True
+5. False
+
+Short Answer Questions
+1. MediaPlayer digunakan untuk mengelola pemutaran audio dan video dalam aplikasi Android. Ini memungkinkan developer untuk memutar file audio dari berbagai sumber, termasuk penyimpanan lokal dan streaming melalui internet.
+
+2. Anda membuat VideoView di XML tata letak Anda atau secara terprogram, mengatur jalur video menggunakan setVideoPath () atau setVideoURI (), dan kemudian memulai pemutaran menggunakan start (). Secara opsional, Anda dapat menambahkan MediaController untuk kontrol pemutaran.
+
+3. Untuk menangkap gambar, Anda membuat Intent dengan MediaStore.ACTION_IMAGE_CAPTURE, memulai aktivitas menggunakan startActivityForResult(), dan menangani hasilnya di onActivityResult() untuk mengambil gambar.
+
+4. Izin yang diperlukan adalah android.permission.RECORD_AUDIO. Anda juga perlu meminta izin ini pada saat runtime untuk Android 6.0 (API level 23) dan yang lebih tinggi.
+
+5. Anda dapat menggunakan MediaPlayer untuk memutar file audio di direktori sumber daya mentah dengan mendapatkan referensi ke sumber daya menggunakan R.raw.filename, membuat instans MediaPlayer, dan memanggil start() setelah menyiapkannya.
+
+Code Fix Questions
+1.
+val mediaPlayer = MediaPlayer()
+mediaPlayer.setDataSource(context, Uri.parse("android.resource://your.package.name/raw/audio"))
+mediaPlayer.prepare() // Prepare the MediaPlayer
+mediaPlayer.start() // Start playback
+
+2.
+val videoView: VideoView = findViewById(R.id.videoView)
+videoView.setVideoPath("android.resource://your.package.name/raw/video") // Set video path
+videoView.start() // Start playback
+
+3. Gak tauu🫡
+
