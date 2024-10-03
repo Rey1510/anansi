@@ -1,0 +1,49 @@
+Multiple Question
+1. a 
+2. b 
+3. b 
+4. b
+5. b
+
+True False
+1. True
+2. True
+3. False
+4. True
+5. True
+
+Short Answer
+1. Tujuan RecyclerView adalah untuk menampilkan kumpulan data yang besar secara efisien dalam format daftar yang dapat digulir. RecyclerView mendaur ulang tampilan yang tidak lagi terlihat di layar untuk meminimalkan penggunaan memori dan meningkatkan kinerja. Ini mendukung berbagai manajer tata letak (seperti LinearLayoutManager, GridLayoutManager, dll.) Dan memberikan fleksibilitas dan penyesuaian yang lebih baik dibandingkan dengan komponen daftar yang lebih tua seperti ListView.
+
+2. Drag n drop button di xml
+
+3. LinearLayout mengatur tampilan anak dalam satu arah (baik secara vertikal maupun horizontal), yang dapat menghasilkan struktur tata letak bersarang jika desain yang kompleks diperlukan. Di sisi lain, ConstraintLayout memungkinkan pemosisian dan ukuran yang lebih fleksibel dari tampilan turunannya dengan mendefinisikan batasan relatif terhadap tampilan lain, sehingga memungkinkan untuk membuat tata letak yang lebih kompleks tanpa bersarang secara berlebihan.
+
+4. Anda dapat menampilkan indikator kemajuan menggunakan kelas ProgressBar di Android. Anda dapat memilih antara bilah kemajuan yang pasti (dengan nilai maksimum yang ditetapkan) atau tidak pasti (untuk operasi yang sedang berlangsung).
+
+5. Tujuan dari Kotak Centang di aplikasi Android adalah untuk memungkinkan pengguna membuat pilihan biner (dicentang atau tidak dicentang). Ini dapat digunakan untuk pilihan tunggal atau untuk memungkinkan beberapa pilihan dari daftar pilihan. Ketika dicentang, biasanya mengindikasikan bahwa opsi tertentu telah dipilih atau diaktifkan.
+
+Code Fix Question
+1. <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/your_image" />
+
+    Taruh gambar di res/drawable
+
+2. <Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Press Me" />
+
+    Gabisa onLick di xml
+
+3. <RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    Dibikin match parent widthnya biar keliatan
+
