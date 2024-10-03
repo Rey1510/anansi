@@ -1,0 +1,52 @@
+Optional Questions
+1. b 
+2. a
+3. b
+4. b
+5. d
+
+True/False Questions
+1. False
+2. False
+3. True
+4. False
+5. True
+
+Short Answers
+1. apply() menyimpan data secara asinkron tanpa mengembalikan hasil, sedangkan commit() menyimpan data secara sinkron dan mengembalikan boolean yang mengindikasikan apakah operasi penyimpanan berhasil atau tidak.
+
+2. 
+val sharedPref = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
+val editor = sharedPref.edit()
+editor.putBoolean("isLoggedIn", true)
+editor.apply()
+
+3.
+val sharedPref = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
+val isLoggedIn = sharedPref.getBoolean("isLoggedIn", false)
+
+4.
+Shared Preferences mudah digunakan dan ringan untuk menyimpan pasangan key, sehingga ideal untuk menyimpan pengaturan atau preferensi pengguna tanpa perlu menggunakan basis data atau manajemen file. Data juga tetap ada di seluruh sesi aplikasi.
+
+5.
+Kita bisa memodifikasi Shared Preferences dari beberapa thread. Namun, disarankan untuk menggunakan apply() daripada commit() untuk keamanan thread, karena apply() beroperasi secara asinkron dan tidak memblokir thread UI.
+
+Code Fix Questions
+1.
+editor.putString("username", "JohnDoe")
+editor.apply()
+
+Method putValue() tidak ada harus menggunakan putString()
+
+2.
+val username = sharedPref.getString("username", "defaultName")
+Method getValue() tidak ada harus menggunakan getString()
+
+3.
+val editor = sharedPref.edit()
+editor.remove("key")
+editor.commit()
+
+Jika menggunakan .clear() maka seluruh entry akan dihapus kalau commit() hanya key spesifik saja
+
+Projectt!!!!🙂
